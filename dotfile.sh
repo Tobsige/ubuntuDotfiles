@@ -2,5 +2,5 @@
 files="bashrc vimrc"
 
 for file in $files; do
-	ln -s ~/.$file  ~/dotfiles/$file
+	ln -s ~/dotfiles/$file ~/.$file  
 done
