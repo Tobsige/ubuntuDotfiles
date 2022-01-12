@@ -21,6 +21,17 @@ set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim
  call plug#begin()
  Plug 'preservim/NERDTree' 
  Plug 'wikitopian/hardmode'  
+ Plug 'neomake/neomake'
+ Plug 'dense-analysis/ale'
+ "deoplete"
+ if has('nvim')
+	   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+   else
+	   Plug 'Shougo/deoplete.nvim'
+	   Plug 'roxma/nvim-yarp'
+	   Plug 'roxma/vim-hug-neovim-rpc'
+ endif
+ let g:deoplete#enable_at_startup = 1
  call plug#end()
 
 " Turn on syntax highlighting.
@@ -92,3 +103,4 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 " max number of paste line
 :set viminfo='1000,<500  
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+set pyxversion=3
