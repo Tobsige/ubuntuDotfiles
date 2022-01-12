@@ -120,3 +120,4 @@ fi
 
 
 export PATH=$PATH:/home/xxy/toolchain/to/linux-devkit/sysroots/x86_64-arago-linux/usr/bin
+export PATH=$PATH:/home/xxy/go/bin
