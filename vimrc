@@ -104,3 +104,4 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 :set viminfo='1000,<500  
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 set pyxversion=3
+set background=dark
