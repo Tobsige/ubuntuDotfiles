@@ -121,3 +121,9 @@ fi
 
 export PATH=$PATH:/home/xxy/toolchain/to/linux-devkit/sysroots/x86_64-arago-linux/usr/bin
 export PATH=$PATH:/home/xxy/go/bin
+export PATH=":home/xxy/routing/bin:/home/xxy/routing/tcl8.4.13/unix:/home/xxy/routing/tk8.4.13/unix:$PATH"
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/xxy/routing/otcl-1.12:/home/xxy/routing/lib"
+
+export TCL_LIBRARY="$TCL_LIBRARY:/home/xxy/routing/tcl8.4.13/library"
+

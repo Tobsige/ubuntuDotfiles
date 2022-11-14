@@ -23,15 +23,10 @@ set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim
  Plug 'wikitopian/hardmode'  
  Plug 'neomake/neomake'
  Plug 'dense-analysis/ale'
- "deoplete"
- if has('nvim')
-	   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-   else
-	   Plug 'Shougo/deoplete.nvim'
-	   Plug 'roxma/nvim-yarp'
-	   Plug 'roxma/vim-hug-neovim-rpc'
- endif
- let g:deoplete#enable_at_startup = 1
+"snipmate for c++
+ Plug 'xavierd/clang_complete'
+"set clang lib path
+ let g:clang_library_path='/usr/lib/llvm-6.0/lib'
  call plug#end()
 
 " Turn on syntax highlighting.
@@ -105,3 +100,6 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 set pyxversion=3
 set background=dark
+" display indentline
+set list lcs=tab:\┊\ 
+set ts=4  
