@@ -27,7 +27,8 @@ set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim
 "snipmate for c++
  Plug 'xavierd/clang_complete'
 "set clang lib path
- let g:clang_library_path='/usr/lib/llvm-6.0/lib'
+ let g:clang_library_path='/usr/lib/llvm-14/lib'
+"let g:clang_library_path='/usr/lib/llvm-6.0/lib'
  call plug#end()
 
 " Turn on syntax highlighting.
@@ -104,3 +105,8 @@ set background=dark
 " display indentline
 set list lcs=tab:\┊\ 
 set ts=4  
+" NERDTree
+let NERDTreeWinSize=20
+" default on
+autocmd VimEnter * NERDTree
+
